@@ -11,5 +11,7 @@ def machine_test():
    print(data.head(3))
    X = data['AGE']
    Y = data['SCORE']
+   X = np.asarray(X).reshape(-1,1)
+   Y = np.asarray(Y).reshape(-1,1)
    print(X)
    print(Y)
